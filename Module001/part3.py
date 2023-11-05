@@ -16,7 +16,7 @@ def exercise_4(a,b):
 
 def exercise_5(a,b):
     print(a>=0 or b<-2)
-#exercise_5(3,3)
+#exercise_5(3,-3)
 
 def exercise_6(a,b,c):
     print(a<b<c)
@@ -32,7 +32,7 @@ def exercise_8(a,b):
 
 def exercise_9(a,b):
     print((a%2)!=0 or (b%2)!=0)
-#exercise_9(5,4)
+#exercise_9(2,1)
 
 def exercise_10(a,b):
     print(((a%2)!=0 and (b%2)==0) or ((a%2)==0 and (b%2)!=0))
