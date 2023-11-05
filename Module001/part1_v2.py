@@ -1,52 +1,48 @@
-from decimal import Decimal
-
 def perimetr_square(a):
-    print("P = ",4*float(a))
-#perimetr_square(10)
+    print("P = ",4*a)
+#perimetr_square(10.0)
 
 def area_square(a):
-    print("S = ",float(a)**2)
-#area_square(15)
+    print("S = ",a**2)
+#area_square(15.0)
 
 def perimetr_and_area_rectangle(a,b):
-    print("S = ",float(a)*float(b))
-    print("P = ", 2*(float(a)+float(b)))
-#perimetr_area_rectangle(23,67)
+    print("S = ",a*b)
+    print("P = ", 2*(a+b))
+#perimetr_area_rectangle(23.0,67.0)
 
 def diametr_circle(d):
-    pi='3.14'
-    print("L = ",Decimal(pi)*Decimal(str(d)))
+    pi=3.14
+    print("L = ",pi*d)
 #diametr_circle(3.567)
 
 def volume_and_area_cube(a):
-    print("V = ",float(a)**3)
-    print("S = ",6*float(a)**2)
-#volume_and_area_cube(10)
+    print("V = ",a**3)
+    print("S = ",6*a**2)
+#volume_and_area_cube(10.0)
 
 def volume_and_area_rectangle_prism(a,b,c):
-    print("V = ", float(a)*float(b)*float(c))
-    print("S = ", 2 * (float(a)*float(b)+float(b)*float(c)+float(a)*float(c)))
-#volume_and_area_rectangle_prism(12,3,8)
+    print("V = ", a*b*c)
+    print("S = ", 2 * (a*b+b*c+a*c))
+#volume_and_area_rectangle_prism(12.1,3.1,8.1)
 
 def circumference_and_area_circle(R):
-    pi='3.14'
-    print("L = ",2*Decimal(pi)*Decimal(str(R)))
-    print("S = ",Decimal(pi)*Decimal(str(R))**2)
+    pi=3.14
+    print("L = ",2*pi*R)
+    print("S = ",pi*R**2)
 #circumference_and_area_circle(12.91)
 
 def average(a,b):
-    print((float(a)+float(b))/2)
+    print((a+b)/2)
 #average(3.15,3.57)
 
 def geometric_mean(a,b):
-    print((abs(float(a)*float(b))**0.5))
-#geometric_mean(-2,8.0)
+    print((a*b)**0.5)
+#geometric_mean(2.0,8.0)
 
 def sum_difference_product_and_quotient(a,b):
-    if a!=0 and b!=0:
-        print(float(a)**2+float(b)**2)
-        print(float(a)**2-float(b)**2)
-        print(float(a)**2*float(b)**2)
-        print(float(a)**2/float(b)**2)
-#sum_difference_product_and_quotient(0.0,2)
-
+    print(a**2+b**2)
+    print(a**2-b**2)
+    print(a**2*b**2)
+    print(a**2/b**2)
+#sum_difference_product_and_quotient(5.1,2.2)
