@@ -19,15 +19,12 @@ def task_2():
         print(list1,list2)
 task_3_1()"""
 
-def task_3_2():
-    list=["a","s","1","a","32","23"]
-    list1=list[0:2]
-    list1.append(list[3])
-    list2=[]
-    list2.append(list[2])
-    list2.extend(list[4:])
-    print(list1,list2)
-#task_3_2()
+list = ["a", "s", "1", "a", "32", "23"]
+def task_3_2(list):
+    list1=[a for a in list if a.isalpha()]
+    list2=[a for a in list if a.isdigit()]
+    print(list1,list2, sep='\n')
+#task_3_2(list)
 
 def task_4():
     list=["a","s","a"]
